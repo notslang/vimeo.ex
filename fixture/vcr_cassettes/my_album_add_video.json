@@ -13,7 +13,7 @@
       "url": "https://api.vimeo.com/me/albums/3694573/videos/18629165"
     },
     "response": {
-      "body": "#Reference<0.0.3.356>",
+      "body": "",
       "headers": {
         "Server": "nginx",
         "Content-Type": "text/html; charset=UTF-8",

@@ -51,7 +51,7 @@
       "url": "https://api.vimeo.com/me/likes/141849348"
     },
     "response": {
-      "body": "#Reference<0.0.3.1587>",
+      "body": "",
       "headers": {
         "Server": "nginx",
         "Content-Type": "text/html; charset=UTF-8",

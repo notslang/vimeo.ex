@@ -13,7 +13,7 @@
       "url": "https://api.vimeo.com/videos/18629165/tags/friends"
     },
     "response": {
-      "body": "#Reference<0.0.4.273>",
+      "body": "",
       "headers": {
         "Server": "nginx",
         "Content-Type": "text/html; charset=UTF-8",

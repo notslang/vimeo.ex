@@ -51,7 +51,7 @@
       "url": "https://api.vimeo.com/users/4443526/channels/xsjado"
     },
     "response": {
-      "body": "#Reference<0.0.1.1671>",
+      "body": "",
       "headers": {
         "Server": "nginx",
         "Content-Type": "text/html; charset=UTF-8",

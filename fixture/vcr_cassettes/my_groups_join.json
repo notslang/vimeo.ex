@@ -13,7 +13,7 @@
       "url": "https://api.vimeo.com/me/groups/hdxs"
     },
     "response": {
-      "body": "#Reference<0.0.4.606>",
+      "body": "",
       "headers": {
         "Server": "nginx",
         "Content-Type": "text/html; charset=UTF-8",

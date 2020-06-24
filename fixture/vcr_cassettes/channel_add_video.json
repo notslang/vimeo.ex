@@ -13,7 +13,7 @@
       "url": "https://api.vimeo.com/channels/999587/videos/18629165"
     },
     "response": {
-      "body": "#Reference<0.0.4.248>",
+      "body": "",
       "headers": {
         "Server": "nginx",
         "Content-Type": "text/html; charset=UTF-8",

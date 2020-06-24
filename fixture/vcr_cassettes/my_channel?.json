@@ -51,7 +51,7 @@
       "url": "https://api.vimeo.com/me/channels/themgoods"
     },
     "response": {
-      "body": "#Reference<0.0.4.242>",
+      "body": "",
       "headers": {
         "Server": "nginx",
         "Content-Type": "text/html; charset=UTF-8",

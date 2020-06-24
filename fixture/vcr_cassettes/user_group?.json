@@ -51,7 +51,7 @@
       "url": "https://api.vimeo.com/users/4443526/groups/hdxs"
     },
     "response": {
-      "body": "#Reference<0.0.3.115>",
+      "body": "",
       "headers": {
         "Server": "nginx",
         "Content-Type": "text/html; charset=UTF-8",
