@@ -39,9 +39,9 @@ defmodule Vimeo.Mixfile do
       {:dotenv, "~> 2.0.0", only: [:dev, :test]},
       {:earmark, "~> 0.1", only: [:dev, :docs]},
       {:ex_doc, "~> 0.10.0", only: [:dev, :docs]},
-      {:excoveralls, "~> 0.3", only: [:dev, :test]},
-      {:exvcr, "~> 0.3", only: [:dev, :test]},
-      {:httpoison, "~> 0.7.2"},
+      {:excoveralls, "~> 0.13.0", only: [:dev, :test]},
+      {:exvcr, "~> 0.11.1", only: [:dev, :test]},
+      {:httpoison, "~> 1.7.0"},
       {:inch_ex, "~> 0.4.0", only: [:dev, :docs]},
       {:poison, "~> 1.5"}
     ]
