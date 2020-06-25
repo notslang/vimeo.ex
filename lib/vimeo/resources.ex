@@ -117,7 +117,8 @@ defmodule Vimeo.Resources do
               tags: nil,
               user: nil,
               created_time: nil,
-              modified_time: nil
+              modified_time: nil,
+              stats: nil
   end
 
   defmodule Credit do
