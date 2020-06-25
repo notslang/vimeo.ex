@@ -6,15 +6,15 @@ defmodule Vimeo.Resources do
     Defines a user schema.
     """
 
-    defstruct uri:      nil,
-              name:     nil,
-              link:     nil,
+    defstruct uri: nil,
+              name: nil,
+              link: nil,
               location: nil,
-              bio:      nil,
-              account:  nil,
+              bio: nil,
+              account: nil,
               pictures: nil,
               websites: nil,
-              stats:    nil
+              stats: nil
   end
 
   defmodule Album do
@@ -22,13 +22,13 @@ defmodule Vimeo.Resources do
     Defines album schema.
     """
 
-    defstruct name:          nil,
-              description:   nil,
-              link:          nil,
-              duration:      nil,
-              pictures:      nil,
-              user:          nil,
-              created_time:  nil,
+    defstruct name: nil,
+              description: nil,
+              link: nil,
+              duration: nil,
+              pictures: nil,
+              user: nil,
+              created_time: nil,
               modified_time: nil
   end
 
@@ -37,11 +37,11 @@ defmodule Vimeo.Resources do
     Defines category schema.
     """
 
-    defstruct uri:           nil,
-              name:          nil,
-              link:          nil,
-              parent:        nil,
-              pictures:      nil,
+    defstruct uri: nil,
+              name: nil,
+              link: nil,
+              parent: nil,
+              pictures: nil,
               subcategories: nil
   end
 
@@ -50,13 +50,13 @@ defmodule Vimeo.Resources do
     Defines channel schema.
     """
 
-    defstruct uri:           nil,
-              name:          nil,
-              description:   nil,
-              link:          nil,
-              pictures:      nil,
-              user:          nil,
-              created_time:  nil,
+    defstruct uri: nil,
+              name: nil,
+              description: nil,
+              link: nil,
+              pictures: nil,
+              user: nil,
+              created_time: nil,
               modified_time: nil
   end
 
@@ -65,14 +65,14 @@ defmodule Vimeo.Resources do
     Defines group schema.
     """
 
-    defstruct uri:           nil,
-              name:          nil,
-              description:   nil,
-              link:          nil,
-              privacy:       nil,
-              pictures:      nil,
-              user:          nil,
-              created_time:  nil,
+    defstruct uri: nil,
+              name: nil,
+              description: nil,
+              link: nil,
+              privacy: nil,
+              pictures: nil,
+              user: nil,
+              created_time: nil,
               modified_time: nil
   end
 
@@ -81,10 +81,10 @@ defmodule Vimeo.Resources do
     Defines Picture schema
     """
 
-    defstruct uri:    nil,
+    defstruct uri: nil,
               active: nil,
-              type:   nil,
-              sizes:  nil
+              type: nil,
+              sizes: nil
   end
 
   defmodule Tag do
@@ -92,9 +92,9 @@ defmodule Vimeo.Resources do
     Defines Tag schema
     """
 
-    defstruct uri:       nil,
-              name:      nil,
-              tag:       nil,
+    defstruct uri: nil,
+              name: nil,
+              tag: nil,
               canonical: nil
   end
 
@@ -103,20 +103,20 @@ defmodule Vimeo.Resources do
     Defines Video schema.
     """
 
-    defstruct uri:           nil,
-              name:          nil,
-              description:   nil,
-              link:          nil,
-              duration:      nil,
-              width:         nil,
-              height:        nil,
-              language:      nil,
-              licence:       nil,
-              embed:         nil,
-              pictures:      nil,
-              tags:          nil,
-              user:          nil,
-              created_time:  nil,
+    defstruct uri: nil,
+              name: nil,
+              description: nil,
+              link: nil,
+              duration: nil,
+              width: nil,
+              height: nil,
+              language: nil,
+              licence: nil,
+              embed: nil,
+              pictures: nil,
+              tags: nil,
+              user: nil,
+              created_time: nil,
               modified_time: nil
   end
 
@@ -125,12 +125,12 @@ defmodule Vimeo.Resources do
     Defines Credit schema
     """
 
-    defstruct uri:   nil,
+    defstruct uri: nil,
               video: nil,
-              tags:  nil,
-              user:  nil,
-              role:  nil,
-              name:  nil
+              tags: nil,
+              user: nil,
+              role: nil,
+              name: nil
   end
 
   defmodule Comment do
@@ -138,7 +138,7 @@ defmodule Vimeo.Resources do
     Defines Comment schema
     """
 
-    defstruct uri:  nil,
+    defstruct uri: nil,
               type: nil,
               text: nil,
               user: nil
