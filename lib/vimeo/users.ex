@@ -86,8 +86,9 @@ defmodule Vimeo.Users do
   Get the list of videos in an Album.
   """
   def album_videos(user_id, album_id) do
-    "users/#{user_id}/albums/#{album_id}/videos"
-    |> API.get
+    # TODO: the sort param should be configurable here. this is an ugly hack to make another project work
+    "users/#{user_id}/albums/#{album_id}/videos?sort=default"
+    |> API.get()
     |> Parser.parse(:video)
   end
 
