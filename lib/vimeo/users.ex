@@ -42,8 +42,9 @@ defmodule Vimeo.Users do
   """
   def albums(user_id, params \\ %{}) do
     "users/#{user_id}/albums"
-    |> API.get(params)
-    |> Parser.parse(:album)
+    |> API.get_all_pages(params)
+    |> Enum.map(&Parser.parse(&1, :album))
+    |> List.flatten()
   end
 
   @doc """
@@ -88,8 +89,9 @@ defmodule Vimeo.Users do
   def album_videos(user_id, album_id) do
     # TODO: the sort param should be configurable here. this is an ugly hack to make another project work
     "users/#{user_id}/albums/#{album_id}/videos?sort=default"
-    |> API.get()
-    |> Parser.parse(:video)
+    |> API.get_all_pages()
+    |> Enum.map(&Parser.parse(&1, :video))
+    |> List.flatten()
   end
 
   @doc """

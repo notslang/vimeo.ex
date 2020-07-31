@@ -21,6 +21,18 @@ defmodule Vimeo.API do
   @spec get(binary, map) :: map
   def get(url, params \\ %{}), do: do_request(:get, url, "", params)
 
+  @spec get_all_pages(binary, map) :: list
+  def get_all_pages(url, params \\ %{}) do
+    result = get(url, params)
+
+    with {:ok, %{paging: %{next: next_page_url}}} <- result,
+         false <- is_nil(next_page_url) do
+      Enum.concat([result], get_all_pages(next_page_url, nil))
+    else
+      _ -> [result]
+    end
+  end
+
   @doc """
   Issues POST request.
   Takes a url and an optional data Map.
