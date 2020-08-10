@@ -27,7 +27,8 @@ defmodule Vimeo.API do
 
     with {:ok, %{paging: %{next: next_page_url}}} <- result,
          false <- is_nil(next_page_url) do
-      Enum.concat([result], get_all_pages(next_page_url, nil))
+      next_page_url = next_page_url |> String.replace(~r/^\//, "")
+      Enum.concat([result], get_all_pages(next_page_url, params))
     else
       _ -> [result]
     end
